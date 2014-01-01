@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css" />
+        <!-- link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.graphite.css" /-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.3.1.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="page_1">
+            
+            <div data-role="content" class="no_content_marging">
+                <div class="center" style="font-size:1.8em">
+                    <br/>
+מיון אקספרס!                    
+                    <br/>
+                    <img src="img/logo.png" class="logo" style="width: 50%"/>
+                    <br/>
+                </div>
+                <div>
+                    <label id="msg" class="errorMsg"/>
+                </div>
+                <fieldset data-role="controlgroup">                
+                    <input id="txt_id" type="text" name="txt_id" style="text-align:center;font-size: 2.5em" value="" placeholder="תעודת זהות"/>
+                    <br/>
+                    <input id="chk_agreement" type="checkbox" style="padding-right:30px;-webkit-transform: scale(1.6)" name="checkbox-agreement" data-role="none"/>
+                    <label for="checkbox-4a" style="padding-right:10px;font-size: 1.4em">אני מסכים <a href="#">לתנאי השימוש</a></label>
+                </fieldset>
+                <br/>
+                <a data-role="button" id="btn_login" name="btn_login" href="#page_2" style="display:none">
+                    <div class="center-wrapper center-bold" style="font-size: 2.1em">התחל שאלון</div>
+                </a>
+            </div>
+
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_2">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>פרטים אישיים</h1>
+            </div>
+            
+            <div data-role="content">
+                <br/>         
+                <fieldset data-role="controlgroup"  style="direction:rtl;">
+                    <legend>אנא סמן את המין שלך:</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">זכר</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">נקבה</label>
+                </fieldset>
+                <br/>            
+                <div data-role="fieldcontain">
+                    <label for="select-choice-1" class="select">בחר את שנת הלידה שלך:</label>
+                    <select name="select-choice-1" id="select-choice-1">
+                        <option value="2008">2008</option> 
+                        <option value="2007">2007</option> 
+                        <option value="2006">2006</option> 
+                        <option value="2005">2005</option> 
+                        <option value="2004">2004</option> 
+                        <option value="2003">2003</option> 
+                        <option value="2002">2002</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2000">2000</option> 
+                        <option value="1999">1999</option> 
+                        <option value="1998">1998</option> 
+                        <option value="1997">1997</option> 
+                        <option value="1996">1996</option> 
+                        <option value="1995">1995</option> 
+                        <option value="1994">1994</option> 
+                        <option value="1993">1993</option> 
+                        <option value="1992">1992</option> 
+                        <option value="1991">1991</option> 
+                        <option value="1990">1990</option> 
+                        <option value="1989">1989</option> 
+                        <option value="1988">1988</option> 
+                        <option value="1987">1987</option> 
+                        <option value="1986">1986</option> 
+                        <option value="1985">1985</option> 
+                        <option value="1984">1984</option> 
+                        <option value="1983">1983</option> 
+                        <option value="1982">1982</option> 
+                        <option value="1981">1981</option> 
+                        <option value="1980">1980</option> 
+                        <option value="1979">1979</option> 
+                        <option value="1978">1978</option> 
+                        <option value="1977">1977</option> 
+                        <option value="1976">1976</option> 
+                        <option value="1975">1975</option> 
+                        <option value="1974">1974</option> 
+                        <option value="1973">1973</option> 
+                        <option value="1972">1972</option> 
+                        <option value="1971">1971</option> 
+                        <option value="1970">1970</option> 
+                    </select>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_3">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>מחלות רקע</h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+
+                אני חולה במחלות הבאות:
+                <div>
+                    <span>אני חולה במחלת לב איסכמית</span>
+                    <span style="margin-right:50px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+
+                אני חולה בסוכרת
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <br/>
+                אני חולה מהפרעת שומנים בדם
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <br/>
+                אני חולה מפרפור פרוזדורים
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <br/>
+                אני חולה מאסטמה
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <br/>
+                אני חולה ממחלת ארות חסימתית כרונית
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_4">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>ניתוחים בעבר</h1>
+            </div>
+            
+            <div data-role="content">
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_5">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>רגישות לתרופות</h1>
+            </div>
+            
+            <div data-role="content">
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+
+        <div data-role="page" id="page_6">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>פרטים דמוגרפים</h1>
+            </div>
+            
+            <div data-role="content">
+                <p>This is a <a href="#">link</a></p>
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Divider</li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+                <label for="flip-1">Flip switch:</label>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+                <a href="#" data-role="button">Click me</a>
+                <fieldset data-role="controlgroup">
+                    <legend>Choose a pet:</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">Cat</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">Dog</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">Hamster</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                    <label for="radio-choice-4">Lizard</label>
+                </fieldset>
+                <div  data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose as many snacks as you'd like:</legend>
+                        <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+                        <label for="checkbox-1a">Cheetos</label>
+                        
+                        <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+                        <label for="checkbox-2a">Doritos</label>
+                        
+                        <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+                        <label for="checkbox-3a">Fritos</label>
+                        
+                        <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+                        <label for="checkbox-4a">Sun Chips</label>
+                    </fieldset>
+                </div>
+                <div class="ui-body">
+                    <h1>H1 Heading</h1>
+                    <p>This is a paragraph that contains <strong>strong</strong>, <em>emphasized</em> and <a href="index.html">linked</a> text. Here is more text so you can see how HTML markup works in content. Here is more text so you can see how HTML markup works in content.</p>
+                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                        <h3>I'm a themed collapsible</h3>
+                        <p>I have <code> data-theme</code> attribute set manually on my container to set the color to match the content block I'm in. </p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+                        <h3>I'm a themed collapsible with a themed content</h3>
+                        <p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in. </p>
+                    </div>
+                </div><!-- /themed container -->
+                
+                <div data-role="fieldcontain">
+                    <label for="name-c">Text Input:</label>
+                    <input type="text" name="name" id="name-c" value=""  />
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="switch-c">Flip switch:</label>
+                    <select name="switch-c" id="switch-c" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="slider-c">Slider:</label>
+                    <input type="range" name="slider" id="slider-c" value="0" min="0" max="100"  />
+                </div>
+                
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>Font styling:</legend>
+                        <input type="checkbox" name="checkbox-6c" id="checkbox-6c" class="custom" />
+                        <label for="checkbox-6c">b</label>
+                        
+                        <input type="checkbox" name="checkbox-7c" id="checkbox-7c" class="custom" />
+                        <label for="checkbox-7c"><em>i</em></label>
+                        
+                        <input type="checkbox" name="checkbox-8c" id="checkbox-8c" class="custom" />
+                        <label for="checkbox-8c">u</label>
+                    </fieldset>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose a pet:</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1c" value="choice-1" />
+                        <label for="radio-choice-1c">Cat</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2c" value="choice-2"  />
+                        <label for="radio-choice-2c">Dog</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-3c" value="choice-3"  />
+                        <label for="radio-choice-3c">Hamster</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-4c" value="choice-4"  />
+                        <label for="radio-choice-4c">Lizard</label>
+                    </fieldset>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="select-choice-c" class="select">Choose shipping method:</label>
+                    <select name="select-choice-c" id="select-choice-c">
+                        <option value="standard">Standard: 7 day</option>
+                        <option value="rush">Rush: 3 days</option>
+                        <option value="express">Express: next day</option>
+                        <option value="overnight">Overnight</option>
+                    </select>
+                </div>
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+
+        <div data-role="page" id="page_7">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>פרטים דמוגרפים</h1>
+            </div>
+            
+            <div data-role="content">
+                <p>This is a <a href="#">link</a></p>
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Divider</li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+                <label for="flip-1">Flip switch:</label>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+                <a href="#" data-role="button">Click me</a>
+                <fieldset data-role="controlgroup">
+                    <legend>Choose a pet:</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">Cat</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">Dog</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">Hamster</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                    <label for="radio-choice-4">Lizard</label>
+                </fieldset>
+                <div  data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose as many snacks as you'd like:</legend>
+                        <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+                        <label for="checkbox-1a">Cheetos</label>
+                        
+                        <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+                        <label for="checkbox-2a">Doritos</label>
+                        
+                        <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+                        <label for="checkbox-3a">Fritos</label>
+                        
+                        <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+                        <label for="checkbox-4a">Sun Chips</label>
+                    </fieldset>
+                </div>
+                <div class="ui-body">
+                    <h1>H1 Heading</h1>
+                    <p>This is a paragraph that contains <strong>strong</strong>, <em>emphasized</em> and <a href="index.html">linked</a> text. Here is more text so you can see how HTML markup works in content. Here is more text so you can see how HTML markup works in content.</p>
+                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
+                        <h3>I'm a themed collapsible</h3>
+                        <p>I have <code> data-theme</code> attribute set manually on my container to set the color to match the content block I'm in. </p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+                        <h3>I'm a themed collapsible with a themed content</h3>
+                        <p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in. </p>
+                    </div>
+                </div><!-- /themed container -->
+                
+                <div data-role="fieldcontain">
+                    <label for="name-c">Text Input:</label>
+                    <input type="text" name="name" id="name-c" value=""  />
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="switch-c">Flip switch:</label>
+                    <select name="switch-c" id="switch-c" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="slider-c">Slider:</label>
+                    <input type="range" name="slider" id="slider-c" value="0" min="0" max="100"  />
+                </div>
+                
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>Font styling:</legend>
+                        <input type="checkbox" name="checkbox-6c" id="checkbox-6c" class="custom" />
+                        <label for="checkbox-6c">b</label>
+                        
+                        <input type="checkbox" name="checkbox-7c" id="checkbox-7c" class="custom" />
+                        <label for="checkbox-7c"><em>i</em></label>
+                        
+                        <input type="checkbox" name="checkbox-8c" id="checkbox-8c" class="custom" />
+                        <label for="checkbox-8c">u</label>
+                    </fieldset>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose a pet:</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1c" value="choice-1" />
+                        <label for="radio-choice-1c">Cat</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2c" value="choice-2"  />
+                        <label for="radio-choice-2c">Dog</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-3c" value="choice-3"  />
+                        <label for="radio-choice-3c">Hamster</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-4c" value="choice-4"  />
+                        <label for="radio-choice-4c">Lizard</label>
+                    </fieldset>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="select-choice-c" class="select">Choose shipping method:</label>
+                    <select name="select-choice-c" id="select-choice-c">
+                        <option value="standard">Standard: 7 day</option>
+                        <option value="rush">Rush: 3 days</option>
+                        <option value="express">Express: next day</option>
+                        <option value="overnight">Overnight</option>
+                    </select>
+                </div>
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
