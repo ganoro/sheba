@@ -43,7 +43,7 @@ var app = {
 
         $('.btn_next').bind("touchend", function() {
             var p = $.mobile.activePage.attr('id');
-            $.mobile.changePage( "#page_" + (parseInt(p.substring(p.length - 1)) + 1), {
+            $.mobile.changePage( "#page_" + (parseInt(p.substring(p.indexOf("_") + 1)) + 1), {
                     showLoadMsg: true,
                     reverse: false,
                     changeHash: false
@@ -52,7 +52,7 @@ var app = {
 
       $('.btn_prev').bind("touchend", function() {
             var p = $.mobile.activePage.attr('id');
-            $.mobile.changePage( "#page_" + (parseInt(p.substring(p.length - 1)) - 1), {
+            $.mobile.changePage( "#page_" + (parseInt(p.substring(p.indexOf("_") + 1)) - 1), {
                     showLoadMsg: true,
                     reverse: false,
                     changeHash: false

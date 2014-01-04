@@ -164,4 +164,13 @@ h1 {
     text-align: center !important;
 }
 
+.destitle {
+    position:relative; 
+    top: -20px;
+    font-size: 1.2em;
+}
 
+.ui-header .ui-title {
+        margin-right: 0px;
+        margin-left: 0px;
+    }

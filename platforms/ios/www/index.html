@@ -8,8 +8,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
         <!-- link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.graphite.css" /-->
 
         <script src="js/jquery.min.js"></script>
@@ -21,8 +22,7 @@
             
             <div data-role="content" class="no_content_marging">
                 <div class="center" style="font-size:1.8em">
-                    <br/>
-מיון אקספרס!                    
+                    <br/>מיון אקספרס!                    
                     <br/>
                     <img src="img/logo.png" class="logo" style="width: 50%"/>
                     <br/>
@@ -47,7 +47,7 @@
         <div data-role="page" id="page_2">
             
             <div data-role="header" data-position="fixed">
-                <h1>פרטים אישיים</h1>
+                <h1><b>פרטים אישיים</b></h1>
             </div>
             
             <div data-role="content">
@@ -134,53 +134,64 @@
         <div data-role="page" id="page_3">
             
             <div data-role="header" data-position="fixed">
-                <h1>מחלות רקע</h1>
+                <h1><b>האם חלית בעבר במחלות הבאות</b></h1>
             </div>
             
             <div data-role="content" style="font-size:1.3em">
-
-                אני חולה במחלות הבאות:
                 <div>
-                    <span>אני חולה במחלת לב איסכמית</span>
-                    <span style="margin-right:50px">
+                    <span class="destitle">מחלת לב איסכמית</span>
+                    <span style="padding-right: 52px">
                         <select name="flip-1" id="flip-1" data-role="slider">
                             <option value="off">לא</option>
                             <option value="on">כן</option>
                         </select>
                     </span>
                 </div>
-
-                אני חולה בסוכרת
-                <select name="flip-1" id="flip-1" data-role="slider">
+                <div>
+                    <span class="destitle">סוכרת</span>
+                    <span style="padding-right: 145px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">הפרעת שומנים בדם</span>
+                    <span style="padding-right: 45px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <br/>
-                אני חולה מהפרעת שומנים בדם
-                <select name="flip-1" id="flip-1" data-role="slider">
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">פרפור פרוזדורים</span>
+                    <span style="padding-right: 65px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                    </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">מאסטמה</span>
+                    <span style="padding-right: 125px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <br/>
-                אני חולה מפרפור פרוזדורים
-                <select name="flip-1" id="flip-1" data-role="slider">
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">ריאות חסימתית כרונית</span>
+                    <span style="padding-right: 20px">
+                     <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
-                </select>
-                <br/>
-                אני חולה מאסטמה
-                <select name="flip-1" id="flip-1" data-role="slider">
-                    <option value="off">לא</option>
-                    <option value="on">כן</option>
-                </select>
-                <br/>
-                אני חולה ממחלת ארות חסימתית כרונית
-                <select name="flip-1" id="flip-1" data-role="slider">
-                    <option value="off">לא</option>
-                    <option value="on">כן</option>
-                </select>
-
-                
+                    </select>
+                    </span>
+                </div>
             </div><!-- /content -->
             
             <div data-role="footer" data-position="fixed">
@@ -211,23 +222,74 @@
         <div data-role="page" id="page_4">
             
             <div data-role="header" data-position="fixed">
-                <h1>ניתוחים בעבר</h1>
+                <h1><b>ניתוחים בעברך</b></h1>
             </div>
             
-            <div data-role="content">
-                <select name="flip-1" id="flip-1" data-role="slider">
+            <div data-role="content" style="font-size:1.3em">
+                <div>
+                    <span class="destitle">כריתת תוספתן</span>
+                    <span style="padding-right: 80px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">כריתת כיס מרה</span>
+                    <span style="padding-right: 70px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">כריתת מעי דק</span>
+                    <span style="padding-right: 80px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <select name="flip-1" id="flip-1" data-role="slider">
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">כריתת מעי גס</span>
+                    <span style="padding-right: 80px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                    </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">תיקון בקע תבורי</span>
+                    <span style="padding-right: 60px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <select name="flip-1" id="flip-1" data-role="slider">
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">תיקון בקע מפשעתי</span>
+                    <span style="padding-right: 41px">
+                     <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
-                </select>
-                
+                    </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">הסרת הידבקויות</span>
+                    <span style="padding-right: 65px">
+                     <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                    </select>
+                    </span>
+                </div>
+
             </div><!-- /content -->
             
             <div data-role="footer" data-position="fixed">
@@ -238,8 +300,8 @@
                         </li>
                         <li>
                             <div id="footer_nav_point" class="center">
-                                <img src="img/current_page.png"/>
                                 <img src="img/other_page.png"/>
+                                <img src="img/current_page.png"/>
                                 <img src="img/other_page.png"/>
                                 <img src="img/other_page.png"/>
                                 <img src="img/other_page.png"/>
@@ -258,24 +320,134 @@
         <div data-role="page" id="page_5">
             
             <div data-role="header" data-position="fixed">
-                <h1>רגישות לתרופות</h1>
+                <h1><b>רגישות לתרופות (אלרגיה) הבאות</b></h1>
             </div>
             
-            <div data-role="content">
-                <select name="flip-1" id="flip-1" data-role="slider">
+            <div data-role="content" style="font-size:1.3em">
+                <div>
+                    <span class="destitle">פנצילין</span>
+                    <span style="padding-right: 120px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">אופטלגין</span>
+                    <span style="padding-right: 110px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">G6PD</span>
+                    <span style="padding-right: 130px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <select name="flip-1" id="flip-1" data-role="slider">
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">אספירין</span>
+                    <span style="padding-right: 118px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                    </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">אחר</span>
+                    <span style="padding-right: 148px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
                     <option value="off">לא</option>
                     <option value="on">כן</option>
                 </select>
-                <select name="flip-1" id="flip-1" data-role="slider">
-                    <option value="off">לא</option>
-                    <option value="on">כן</option>
-                </select>
+                    </span>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
 
-                
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_6">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>האם אתה נוטל תרופות קבועות</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+
+                <div data-role="fieldcontain">
+                    <label for="name-c">שם התרופה:</label>
+                    <input type="text" name="name" id="name-c" value=""  />
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" class = "ui-hide-label">
+                            <label for="birth-place">מינון</label>
+                            <input type="text" name="birth-place" id="birth_place" value="" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width:48.5%">
+                        <div data-role = "fieldcontain" class="ui-hide-label">
+                        <label for="birth-place">&nbsp;</label>
+
+                        <select name="select-choice-c" id="select-choice-c" >
+                            <option value="standard">מ״ג</option>
+                            <option value="rush">גרם</option>
+                            <option value="express">יחידות</option>
+                            <option value="overnight">טיפות</option>
+                        </select>
+                        </div>
+                    </div>                
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" class = "ui-hide-label">
+                            <label for="birth-place">תדירות</label>
+                            <input type="text" name="birth-place" id="birth_place" value="" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width:48.5%">
+                        <div data-role = "fieldcontain" class="ui-hide-label">
+                        <label for="birth-place">&nbsp;</label>
+
+                        <select name="select-choice-c" id="select-choice-c" >
+                            <option value="standard">פעמים ביום</option>
+                            <option value="rush">פעמים בשבוע</option>
+                            <option value="express">פעמים בחודש</option>
+                        </select>
+                        </div>
+                    </div>                
+                </div>
+                <a href="#" data-role="button">הוסף לסל</a>
             </div><!-- /content -->
             
             <div data-role="footer" data-position="fixed">
@@ -304,7 +476,407 @@
         </div><!-- /page -->
 
 
-        <div data-role="page" id="page_6">
+        <div data-role="page" id="page_7">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>האם קיימת במשפחתך היסטוריה של</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+                <div>
+                    <span class="destitle">מחלת מעיים</span>
+                    <span style="padding-right: 90px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">מחלת מעי דלקתית</span>
+                    <span style="padding-right: 45px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">סרטן המעי הגס</span>
+                    <span style="padding-right: 67px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                    </span>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+
+        <div data-role="page" id="page_8">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>האם אתה</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+                <div>
+                    <span class="destitle">מעשן</span>
+                    <span style="padding-right: 144px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">שותה אלכוהל</span>
+                    <span style="padding-right: 86px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <span class="destitle">משתמש בסמים</span>
+                    <span style="padding-right: 73px">
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">לא</option>
+                    <option value="on">כן</option>
+                </select>
+                    </span>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_9">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>מהי הסיבה בעיקרית לביקורך במיון</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+                <fieldset data-role="controlgroup">
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">כאב בטן</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">הקאות</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">חום</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                    <label for="radio-choice-4">דימום מדרכי העיקול</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-5" value="choice-5"  />
+                    <label for="radio-choice-5">פציעה בעקבות תאונה או חבלה</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-6" value="choice-6"  />
+                    <label for="radio-choice-6">כאבים באזור פי הטבעת</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-7" value="choice-7"  />
+                    <label for="radio-choice-7">אודם / נפיחות / רגישות באזור פצע ניתוח</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-8" value="choice-8"  />
+                    <label for="radio-choice-8">אחר</label>
+                </fieldset>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_10">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>כאב בטן</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+                <label for="birth-place">ממתי התחלת לסבול מכאב בטן?</label> לפני :
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" class = "ui-hide-label">
+                            <label for="birth-place">&nbsp;</label>
+                            <input type="text" name="birth-place" id="birth_place" value="" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width:48.5%">
+                        <div data-role = "fieldcontain" class="ui-hide-label">
+                        <label for="birth-place">&nbsp;</label>
+
+                        <select name="select-choice-c" id="select-choice-c" >
+                            <option value="standard">שעות</option>
+                            <option value="rush">ימים</option>
+                            <option value="express">שבועות</option>
+                            <option value="express">חודשים</option>
+                        </select>
+                        </div>
+                    </div>                
+                </div>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+        <div data-role="page" id="page_11">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>סמן מהו המיקום של כאבי הבטן</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+
+                <img src="img/abd.png" style="width:250px" /><br/>
+
+                <label for="birth-place">או בחר מהרשימה הזו</label>
+                <fieldset data-role="controlgroup">
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">בטן עליונה בצד ימין</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">בטן עליונה בצד שמאל</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">בטן עליונה אמצע</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                    <label for="radio-choice-4">בטן תחתונה בצד ימין</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-5" value="choice-5"  />
+                    <label for="radio-choice-5">בטן תחתונה בצד שמאל</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-6" value="choice-6"  />
+                    <label for="radio-choice-6">בטן תחתונה אמצע</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-7" value="choice-7"  />
+                    <label for="radio-choice-7">בטן ימנית</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-8" value="choice-8"  />
+                    <label for="radio-choice-8">.בטן שמאלית</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-9" value="choice-9"  />
+                    <label for="radio-choice-9">.בטן מרכזית</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-10" value="choice-10"  />
+                    <label for="radio-choice-10">מותן</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-11" value="choice-11"  />
+                    <label for="radio-choice-11">סביב הטבור</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-12" value="choice-12"  />
+                    <label for="radio-choice-12">הכאבים הם בכל הבטן</label>
+                </fieldset>
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+       <div data-role="page" id="page_12">
+            
+            <div data-role="header" data-position="fixed">
+                <h1><b>ציין את האופי של כאבי הבטן</b></h1>
+            </div>
+            
+            <div data-role="content" style="font-size:1.3em">
+                <label for="birth-place"></label> 
+                <div data-role="fieldcontain">
+                    <label for="slider-c">עוצמת הכאב</label>
+                    <div style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 - ללא&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 - הכי חזק שחווית
+                    </div>
+                    <input type="range" name="slider" id="slider-c" value="5" min="0" max="10"  />
+                </div>
+
+            <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" class = "ui-hide-label">
+                            <label for="birth-place">&nbsp;</label>
+                            <label for="birth-place">כאב בעל אופי</label> 
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width:48.5%">
+                        <div data-role = "fieldcontain" class="ui-hide-label">
+                        <label for="birth-place">&nbsp;</label>
+                        <select name="select-choice-c" id="select-choice-c" >
+                            <option value="standard">שורף</option>
+                            <option value="rush">דוקר</option>
+                            <option value="express">קורע</option>
+                            <option value="express">מכווץ</option>
+                            <option value="express">לוחץ</option>
+                        </select>
+                        </div>
+                    </div>                
+                </div>                
+                
+                <div>
+                    <span class="destitle">כאב בהתקפים?</span>
+                    <span style="padding-right: 76px">
+                        <select name="flip-1" id="flip-1" data-role="slider">
+                            <option value="off">לא</option>
+                            <option value="on">כן</option>
+                        </select>
+                    </span>
+                </div>
+
+                <label for="birth-place">עוצמת הכאב במגמת</label> 
+                <fieldset data-role="controlgroup">
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">החמרה</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">הקלה</label>
+                    
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">אינו משתנה</label>
+                </fieldset>
+
+            </div><!-- /content -->
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <img class="navbar_backbutton btn_prev" page_name="page_target_sales" src="img/btn_back.png"/>
+                        </li>
+                        <li>
+                            <div id="footer_nav_point" class="center">
+                                <img src="img/current_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                                <img src="img/other_page.png"/>
+                            </div>
+                        </li>
+                        <li>
+                            <img id="next" class="navbar_nextbutton btn_next" page_name="page_sales_description" src="img/btn_next_hb.png"/>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div><!-- /page -->
+
+
+        <div data-role="page" id="page_20">
             
             <div data-role="header" data-position="fixed">
                 <h1>פרטים דמוגרפים</h1>
@@ -455,7 +1027,7 @@
         </div><!-- /page -->
 
 
-        <div data-role="page" id="page_7">
+        <div data-role="page" id="page_21">
             
             <div data-role="header" data-position="fixed">
                 <h1>פרטים דמוגרפים</h1>
